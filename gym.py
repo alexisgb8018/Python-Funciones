@@ -13,6 +13,28 @@ Returns:
 
 from os import remove
 
+## Bhaskara función ##
+
+
+def delta(a, b, c):
+    return (b * b) - (4 * a * c)
+
+
+def cuadratica(a, b, c):
+    if delta(a, b, c) > 0:
+        return (
+            ((-b) + (math.sqrt(delta(a, b, c)))) / (2 * a),
+            ((-b) - (math.sqrt(delta(a, b, c)))) / (2 * a),
+        )
+    elif delta(a, b, c) == 0:
+        return (-b + 0) / (2 * a)
+    else:
+        return "No tiene solucion en los reales"
+    
+------------------------------------------------------------------------#    
+    
+    
+
 
 def maximo3(n1: int, n2: int, n3: int):
     """
