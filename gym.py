@@ -213,7 +213,7 @@ def get_middle(text):
     else:
         return text[int(n/2)]
 
-#print(get_middle("negraso"))        
+#print(get_middle("Soleado"))        
 
     
 
